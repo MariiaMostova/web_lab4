@@ -1,0 +1,60 @@
+main{
+    margin: 52px 12% 0;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+footer{
+    margin: 32px;
+}
+
+div{
+    animation: div_increment 2s linear;
+    margin: 32px;
+    padding: 0;
+    border-radius: 8px;
+    border: solid rgba(126, 126, 126, 0.25) 0.5px;
+    box-shadow: 0.5px 0.5px rgba(126, 126, 126, 0.25);
+}
+
+@keyframes div_increment {
+    from {
+        transform: scale(1.08);
+    }
+
+    to {
+        transform: scale(1.0);}
+}
+
+div:hover {
+    -webkit-animation: div_hover 5s linear infinite;
+}
+
+@-webkit-keyframes div_hover {
+    from {
+        transform: scale(1.08);}
+
+    to {
+        transform: scale(1.08);}
+}
+
+img{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 1px rgba(126, 126, 126, 0.2);
+}
+
+h4{
+    color: dimgray;
+    font-family: Rubik;
+    margin: 0;
+    padding: 8px;
+    text-align: center;
+}
+
+p{
+    margin: 0;
+    padding: 8px;
+}

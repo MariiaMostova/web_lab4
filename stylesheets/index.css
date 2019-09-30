@@ -1,0 +1,154 @@
+body{
+background: cornsilk;
+}
+
+#logo{
+    animation: start_arise 2s linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 48px;
+    margin: 0;
+    padding: 16px;
+    font-family: Brush Script MT;
+    font-size: 30px;
+    color: #7E7E7E;
+    font-weight: bold;
+    text-align: center;
+}
+
+@keyframes start_arise {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    position: absolute;
+    top: 12px;
+    left: 10%;
+    display: block;
+    margin-left: 48px;
+}
+
+ul{
+    position: absolute;
+    top: 0;
+    width: content-box;
+}
+
+li, .nav-item{
+    display: inline-block;
+    width: 160px;
+    height: 24px;
+    text-align: center;
+    padding: 8px 0;
+}
+
+a, .nav-link{
+    height: 36px;
+    text-decoration: none;
+    color: #7E7E7E;
+    font-size: large;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: left;
+}
+
+nav ul ul{
+    display: none;
+    background: cornsilk;
+}
+
+nav li:hover ul{
+    display: block;
+    top: 36px;
+    left: 29.5%;
+}
+
+#for_fans li{
+    display: block;
+    height: 36px;
+    color: #7E7E7E;
+    font-size: medium;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: left;
+    padding: 12px 12px 12px 6px;
+}
+
+#first_hover{
+    padding-top: 12px;
+}
+
+li a:hover{
+    animation: a_hover 2s linear;
+    background: #7E7E7E;
+    color: cornsilk;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+@keyframes a_hover {
+    from {
+        background-color: #7E7E7E;
+    }
+    50% {
+        background-color: cornsilk;
+    }
+
+    to {
+        background-color: #7E7E7E;
+    }
+}
+
+.main_photo{
+    animation: start_arise 2s linear;
+    margin: 80px 24px 16px;
+    padding: 0;
+}
+
+#photos{
+    display: inline-block;
+}
+
+h3{
+    color: dimgray;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 32px;
+}
+
+.left_photo{
+    animation: start_arise 2s linear;
+    margin: 16px;
+}
+
+p{
+    color: #7E7E7E;
+    font-family: Rubik;
+    font-size: 15px;
+}
+
+section{
+    margin: 0 15%;
+}
+
+footer{
+    margin: 32px;
+}
+
+button{
+    position: absolute;
+    top: 48px;
+    left: -74px;
+}
