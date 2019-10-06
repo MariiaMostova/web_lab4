@@ -36,20 +36,22 @@ nav{
     top: 12px;
     left: 10%;
     display: block;
+    background-color: cornsilk;
     margin-left: 48px;
 }
 
 ul{
     position: absolute;
     top: 0;
-    width: content-box;
 }
 
 li, .nav-item{
     display: inline-block;
-    width: 160px;
-    height: 24px;
-    text-align: center;
+    width: 144px;
+    height: 36px;
+    background-color: cornsilk;
+    text-align: left;
+    text-decoration: none;
     padding: 8px 0;
 }
 
@@ -82,7 +84,7 @@ nav li:hover ul{
     font-weight: bold;
     font-family: sans-serif;
     text-align: left;
-    padding: 12px 12px 12px 6px;
+    padding: 12px 4px;
 }
 
 #first_hover{
@@ -118,7 +120,8 @@ li a:hover{
 }
 
 #photos{
-    display: inline-block;
+    display: flex;
+    justify-content: center;
 }
 
 h3{
@@ -150,5 +153,5 @@ footer{
 button{
     position: absolute;
     top: 48px;
-    left: -74px;
+    left: -84px;
 }
