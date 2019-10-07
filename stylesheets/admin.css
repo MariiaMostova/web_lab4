@@ -1,0 +1,38 @@
+main{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+img{
+    margin-top: -36px;
+    margin-left: 12px;
+}
+
+.admin_btn, textarea{
+    background-color: white;
+    border: solid 1px rgba(126, 126, 126, 0.51);
+    border-radius: 8px;
+    color: #7E7E7E;
+    font-family: Rubik;
+    padding: 4px;
+}
+
+.admin_btn{
+    height: 4em;
+}
+
+textarea{
+    width: 100%;
+}
+
+#first_card{
+    margin-top: 120px;
+}
+
+.admin_card{
+    margin-top: 32px;
+}
+
+#news_body{
+    height: 10rem;
+}

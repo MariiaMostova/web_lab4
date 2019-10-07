@@ -1,0 +1,38 @@
+main{
+    margin-top: 80px;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.card{
+    margin-left: 32px;
+    padding: 8px;
+}
+
+label, .send, .card{
+    background-color: white;
+    border: solid 1px rgba(126, 126, 126, 0.25);
+    border-radius: 8px;
+    color: #7E7E7E;
+    font-family: Rubik;
+    padding: 4px;
+    margin-left: 32px;
+}
+
+label, textarea{
+    width: 100%;
+}
+
+label{
+    height: 10rem;
+}
+
+textarea{
+    height: 9rem;
+    border: none;
+}
+
+.send{
+    height: 2em;
+    padding: 4px;
+}

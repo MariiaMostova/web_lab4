@@ -1,0 +1,45 @@
+body {
+    display: block;
+}
+
+main{
+    margin-top: 80px;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+h3{
+    color: #7E7E7E;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-bottom: 24px;
+}
+
+iframe{
+    height: 50%;
+}
+
+.card{
+    height: 10rem;
+    margin-top: 32px;
+}
+
+button{
+    background-color: white;
+    border: solid 1px rgba(126, 126, 126, 0.51);
+    border-radius: 8px;
+    color: tomato;
+    font-family: Rubik;
+    margin-top: 32px;
+    padding: 4px;
+}
+
+button.col{
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+p{
+    padding: 8px;
+    text-align: center;
+}

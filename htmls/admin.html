@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,8 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../stylesheets/common.css">
-    <link rel="stylesheet" href="../stylesheets/news.css">
-
+    <link rel="stylesheet" href="../stylesheets/admin.css">
 </head>
 <body>
 <header>
@@ -51,45 +49,31 @@
     </nav>
 </header>
 <main>
-    <div class="card">
-        <img src="../images/Lana-Del-Rey-Press-Shot.jpeg" alt="">
-        <h6>Lana Del Rey reveals new album White Hot Forever will be released in 2020</h6>
-        <p>Artist has just released her latest record 'Norman F***ing Rockwell',
-            which she co-produced with Jack Antonoff</p>
+    <div class="container admin_card"  id="first_card">
+        <div class="row">
+            <button class="admin_btn col-2">Add image</button>
+            <img class="col-5 h-auto" src="../images/picture.png" alt="">
+        </div>
     </div>
-    <div class="card">
-        <img src="../images/lana-del-rey-new-album.jpg"alt="">
-        <h6>Lana Del Rey new album: Release date and tracklist
-            for ‘Norman F****** Rockwell’ revealed</h6>
-        <p>
-            The artist has unveiled the new record’s Titanic-inspired
-            cover art starring Jack Nicholson’s grandson</p>
-    </div>
-    <div class="card">
-        <img src="../images/gettyimages-1057181644.jpg" alt="">
-        <h6>Lana Del Rey stars in new Gucci Guilty campaign</h6>
-        <p>Gucci Beauty has released a new short film for their Gucci Guilty fragrance.</p>
-    </div>
-    <div class="card">
-        <img src="../images/black-futures.jpg" alt="">
-        <h6>Now Hear This: Black Futures, Lana Del Rey, Kano and Ezra Furman</h6>
-        <p>In her weekly column, our music correspondent goes through
-            the best – and worst – releases of the week</p>
-    </div>
-    <div class="card">
-        <img src="../images/lana-del-rey.jpg" alt="">
-        <h6>Lana Del Rey, George Ezra and Snow Patrol headlining Latitude festival</h6>
-        <p>The two-time winner of the UK Best Major Festival Award takes place in July</p>
-    </div>
-    <div class="card">
-        <img src="../images/lana-del-rey-israel.jpg" alt="">
-        <h6>Lana Del Rey cancels Israeli music festival performance after backlash</h6>
-        <p>It's important to me to perform in both Palestine and Israel and treat all my fans equally</p>
+    <div class="container admin_card">
+         <div class="row">
+             <button class="admin_btn col-2">Send</button>
+             <form class="col-10 form">
+                 <label class="form-row">
+                     <textarea placeholder="News title"></textarea>
+                 </label>
+                 <label class="form-row">
+                     <textarea id="news_body" placeholder="News body"></textarea>
+                 </label>
+             </form>
+         </div>
     </div>
 </main>
-<footer>
-    <p align="center">Made by <b>Mariia Mostova</b></p>
-    <p align="center"><b>2019</b></p>
+<footer class="page-footer">
+    <div class="container-fluid text-center text-md-left">
+        <p align="center">Made by <b>Mariia Mostova</b></p>
+        <p align="center"><b>2019</b></p>
+    </div>
 </footer>
 </body>
 </html>
