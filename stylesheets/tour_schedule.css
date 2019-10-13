@@ -1,0 +1,18 @@
+main{
+    margin-top: 80px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+h4{
+    color: dimgray;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 32px;
+}
+
+.table{
+    color: dimgray;
+}
+.table-bordered{
+    border-radius: 4px;
+}

@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6945d159-87ce-4363-80d2-ce746f2edfb0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/web_lab4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/web_lab4.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-4.3.1/dist/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-4.3.1/dist/css/bootstrap-grid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-4.3.1/dist/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-4.3.1/dist/css/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-4.3.1/dist/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-4.3.1/dist/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-4.3.1/dist/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-4.3.1/dist/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-4.3.1/site/docs/4.3/examples/carousel/carousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-4.3.1/site/docs/4.3/examples/carousel/carousel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-4.3.1/site/docs/4.3/examples/carousel/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-4.3.1/site/docs/4.3/examples/carousel/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-4.3.1/site/docs/4.3/examples/grid/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-4.3.1/site/docs/4.3/examples/grid/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmls/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmls/admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmls/concert_venue.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmls/concert_venue.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmls/fans_appeal.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmls/fans_appeal.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmls/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmls/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmls/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmls/news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmls/tour_schedule.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmls/tour_schedule.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/news.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/news.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,23 +29,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/stylesheets/index.css">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/htmls/news.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-              <folding>
-                <marker date="1570313527421" expanded="true" signature="524:540" ph="..." />
-              </folding>
+            <state relative-caret-position="481">
+              <caret line="94" column="48" selection-start-line="94" selection-start-column="48" selection-end-line="94" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/htmls/index.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/stylesheets/news.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+            <state relative-caret-position="357">
+              <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -61,9 +67,12 @@
       <find>left</find>
       <find>ul</find>
       <find>bu</find>
-      <find>nav</find>
       <find>for</find>
       <find>ph</find>
+      <find>main</find>
+      <find>logo</find>
+      <find>h</find>
+      <find>nav</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -76,14 +85,28 @@
         <option value="$PROJECT_DIR$/bootstrap-4.3.1/scss/_nav.scss" />
         <option value="$PROJECT_DIR$/bootstrap-4.3.1/scss/_media.scss" />
         <option value="$PROJECT_DIR$/stylesheets/media.css" />
-        <option value="$PROJECT_DIR$/htmls/index.html" />
+        <option value="$PROJECT_DIR$/htmls/tour_shedule.html" />
         <option value="$PROJECT_DIR$/stylesheets/index.css" />
+        <option value="$PROJECT_DIR$/stylesheets/concert_venue.css" />
+        <option value="$PROJECT_DIR$/stylesheets/tour_shedule.css" />
+        <option value="$PROJECT_DIR$/stylesheets/tour_schedule.css" />
+        <option value="$PROJECT_DIR$/stylesheets/admin.css" />
+        <option value="$PROJECT_DIR$/stylesheets/fans_appeal.css" />
+        <option value="$PROJECT_DIR$/stylesheets/common.css" />
+        <option value="$PROJECT_DIR$/htmls/tour_schedule.html" />
+        <option value="$PROJECT_DIR$/htmls/fans_appeal.html" />
+        <option value="$PROJECT_DIR$/htmls/index.html" />
+        <option value="$PROJECT_DIR$/htmls/admin.html" />
+        <option value="$PROJECT_DIR$/htmls/concert_venue.html" />
+        <option value="$PROJECT_DIR$/htmls/news.html" />
+        <option value="$PROJECT_DIR$/stylesheets/news.css" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="742" />
-    <option name="width" value="1163" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="705" />
+    <option name="y" value="1" />
+    <option name="width" value="1215" />
     <option name="height" value="1032" />
   </component>
   <component name="ProjectView">
@@ -91,7 +114,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -113,6 +135,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -120,8 +143,14 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../web_lab4" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
@@ -138,17 +167,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/web_lab4/htmls/index.html" useBuiltInWebServerPort="true">
+  <component name="RunManager" selected="JavaScript Debug.news.html">
+    <configuration name="admin.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/web_lab4/htmls/admin.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="test.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/web_lab4/htmls/test.html" useBuiltInWebServerPort="true">
+    <configuration name="concert_venue.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/web_lab4/htmls/concert_venue.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="fans_appeal.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/web_lab4/htmls/fans_appeal.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="news.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/web_lab4/htmls/news.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="tour_schedule.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/web_lab4/htmls/tour_schedule.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.index.html" />
-        <item itemvalue="JavaScript Debug.test.html" />
+        <item itemvalue="JavaScript Debug.news.html" />
+        <item itemvalue="JavaScript Debug.admin.html" />
+        <item itemvalue="JavaScript Debug.tour_schedule.html" />
+        <item itemvalue="JavaScript Debug.fans_appeal.html" />
+        <item itemvalue="JavaScript Debug.concert_venue.html" />
       </list>
     </recent_temporary>
   </component>
@@ -167,17 +208,39 @@
       <workItem from="1570310542863" duration="1623000" />
       <workItem from="1570312234416" duration="180000" />
       <workItem from="1570312434775" duration="1152000" />
+      <workItem from="1570384546226" duration="36572000" />
+      <workItem from="1570532750553" duration="6065000" />
+      <workItem from="1570543251167" duration="2122000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14092000" />
+    <option name="totallyTimeSpent" value="58851000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="532" y="0" width="738" height="688" extended-state="0" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33238232" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14308426" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3285968" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14308426" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -189,12 +252,12 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3285968" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -202,45 +265,107 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css" />
     <entry file="file://$PROJECT_DIR$/htmls/test.html" />
-    <entry file="file://$PROJECT_DIR$/bootstrap-4.3.1/scss/_media.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap-4.3.1/scss/_nav.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/news.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/htmls/news.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap-4.3.1/scss/_media.scss" />
+    <entry file="file://$PROJECT_DIR$/bootstrap-4.3.1/scss/_nav.scss" />
     <entry file="file://$PROJECT_DIR$/stylesheets/media.css" />
-    <entry file="file://$PROJECT_DIR$/htmls/index.html">
+    <entry file="file://$PROJECT_DIR$/bootstrap-4.3.1/scss/_tables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        <state relative-caret-position="17">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/fans_appeal.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        <state relative-caret-position="136">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htmls/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="134" column="9" selection-start-line="134" selection-start-column="9" selection-end-line="134" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/concert_venue.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htmls/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="57" column="38" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="70" column="20" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htmls/fans_appeal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1649">
+          <caret line="97" column="50" selection-start-line="97" selection-start-column="50" selection-end-line="97" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/tour_schedule.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htmls/concert_venue.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="58" column="28" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="28" />
           <folding>
-            <marker date="1570313527421" expanded="true" signature="524:540" ph="..." />
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htmls/tour_schedule.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="55" column="51" selection-start-line="55" selection-start-column="51" selection-end-line="55" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htmls/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="94" column="48" selection-start-line="94" selection-start-column="48" selection-end-line="94" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/news.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
         </state>
       </provider>
     </entry>
