@@ -14,12 +14,9 @@ htmls/tour_schedule.html
 stylesheets/tour_schedule.css
 htmls/fans_appeal.html
 stylesheets/fans_appeal.css
-stylesheets/error.css
 
 NETWORK:
-htmls/admin.html
-stylesheets/admin.css
-images/*
+*
 
 FALLBACK:
-/   htmls/error.html
+htmls/admin.html   htmls/error.html
