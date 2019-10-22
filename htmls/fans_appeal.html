@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="../stylesheets/common.css">
     <link rel="stylesheet" href="../stylesheets/fans_appeal.css">
+    <script src="../javascripts/fans_appeal.js"></script>
 
 </head>
-<body>
+<body id="body">
 <header>
     <p id="logo">Lana Del Rey</p>
     <nav class="navbar-expand-lg navbar-light">
@@ -47,53 +48,56 @@
         </div>
     </nav>
 </header>
-<main>
-    <div class="container">
-        <hr class="row">
-        <div class="row">
-            <div class="fan_time card col-2">
-                <p class="card-text">Fan time</p>
-                <p class="card-text">20:20</p>
-                <p class="card-text">09.09.19</p>
+<main id="main">
+    <div id="appeals">
+        <div class="container">
+            <hr class="row">
+            <div class="row">
+                <div class="fan_time card col-2">
+                    <p class="card-text">Fan time</p>
+                    <p class="card-text">20:20</p>
+                    <p class="card-text">09.09.19</p>
+                </div>
+                <div class="card col-8">
+                    <p class="card-text">It was amazing meeting. Your concerts are unforgettable.
+                        You are my muse. I love your songs and you. I hope I see you soon.<br/>
+                    </p>
+                </div>
             </div>
-            <div class="card col-8">
-                <p class="card-text">It was amazing meeting. Your concerts are unforgettable.
-                    You are my muse. I love your songs and you. I hope I see you soon.<br/>
-                </p>
+        </div>
+        <div class="container">
+            <hr class="row">
+            <div class="row">
+                <div class="fan_time card col-2">
+                    <p class="card-text">Fan time</p>
+                    <p class="card-text">18:30</p>
+                    <p class="card-text">12.10.19</p>
+                </div>
+                <div class="card col-8">
+                    <p class="card-text">
+                        IIIIIII<br/>
+                        <br/>
+                        LLLLLLLLLLL<br/>
+                        OOOOOOOOOO<br/>
+                        VVVVVVVV<br/>
+                        EEEEEEEE<br/>
+                        <br/>
+                        YYYYYYYYYYY<br/>
+                        OOOOOOOOOO<br/>
+                        UUUUUUUUUUU</p>
+                </div>
             </div>
         </div>
     </div>
+
     <div class="container">
         <hr class="row">
         <div class="row">
-            <div class="fan_time card col-2">
-                <p class="card-text">Fan time</p>
-                <p class="card-text">18:30</p>
-                <p class="card-text">12.10.19</p>
-            </div>
-            <div class="card col-8">
-                <p class="card-text">
-                    IIIIIII<br/>
-                    <br/>
-                    LLLLLLLLLLL<br/>
-                    OOOOOOOOOO<br/>
-                    VVVVVVVV<br/>
-                    EEEEEEEE<br/>
-                    <br/>
-                    YYYYYYYYYYY<br/>
-                    OOOOOOOOOO<br/>
-                    UUUUUUUUUUU</p>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <hr class="row">
-        <div class="row">
-            <button class="send col-2 align-bottom">Send</button>
+            <button class="send col-2 align-bottom" onclick="addNewAppeal()" id="send">Send</button>
             <div class="col-8 form">
                 <form class="form-row">
                     <label>
-                        <textarea placeholder="Write an appeal..."></textarea>
+                        <textarea id="description" placeholder="Write an appeal..."></textarea>
                     </label>
                 </form>
             </div>

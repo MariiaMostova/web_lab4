@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="../stylesheets/common.css">
     <link rel="stylesheet" href="../stylesheets/admin.css">
+    <script src="../javascripts/admin.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+
 </head>
 <body>
 <header>
@@ -48,19 +53,20 @@
 <main>
     <div class="container admin_card"  id="first_card">
         <div class="row">
-            <button class="admin_btn col-2">Add image</button>
-            <img class="col-3 h-auto" src="../images/picture.png" alt="">
+            <button class="admin_btn col-2" id="add_photo">Add image</button>
+            <input type="file" class="d-none" id="file_reader">
+            <img class="col-3 h-auto" id="add_img" src="../images/picture.png" alt="">
         </div>
     </div>
     <div class="container admin_card">
          <div class="row">
-             <button class="admin_btn col-2">Send</button>
+             <button class="admin_btn col-2" id="send" onclick="new_news()">Send</button>
              <form class="col-10 form">
                  <label class="form-row">
-                     <textarea placeholder="News title"></textarea>
+                     <textarea type="text" id="news_title" placeholder="News title"></textarea>
                  </label>
                  <label class="form-row">
-                     <textarea id="news_body" placeholder="News body"></textarea>
+                     <textarea id="news_body" type="text" placeholder="News body"></textarea>
                  </label>
              </form>
          </div>
