@@ -8,11 +8,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="../stylesheets/common.css">
     <link rel="stylesheet" href="../stylesheets/admin.css">
-    <script src="../javascripts/admin.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-            crossorigin="anonymous"></script>
-
 </head>
 <body>
 <header>
@@ -53,9 +48,9 @@
 <main>
     <div class="container admin_card"  id="first_card">
         <div class="row">
-            <button class="admin_btn col-2" id="add_photo">Add image</button>
-            <input type="file" class="d-none" id="file_reader">
-            <img class="col-3 h-auto" id="add_img" src="../images/picture.png" alt="">
+            <input type="file" id="real_file" hidden="hidden">
+            <button class="admin_btn col-2" type="button" id="custom_button">Add</button>
+            <img class="col-3 h-auto" id="add_img" src="../images/picture.png" alt="This photo can not be loaded">
         </div>
     </div>
     <div class="container admin_card">
@@ -78,5 +73,9 @@
         <p align="center"><b>2019</b></p>
     </div>
 </footer>
+<script src="../javascripts/admin.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
 </body>
 </html>

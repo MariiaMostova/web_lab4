@@ -43,28 +43,29 @@ function addNewAppeal() {
     fansDiv.appendChild(p3);
 
     let p4 = document.createElement('p');
-    if (verifyInput(description)){
-        p4.appendChild(document.createTextNode(description.value));
-    }
-    else {
+    if (!verifyInput(description)) {
         alert('Print appeal please.');
+        stop();
+    } else {
+        p4.appendChild(document.createTextNode(description.value));
+        cardDiv.appendChild(p4);
+
+        divNew.appendChild(fansDiv);
+        divNew.appendChild(cardDiv);
+
+        container.appendChild(hr);
+        container.appendChild(divNew);
+
+        appeals.appendChild(container);
+
+        container.className = 'container';
+        divNew.className = 'row';
+        fansDiv.className = 'card col-2';
+        cardDiv.className = 'card col-8';
+        hr.className = 'row'
+
+        description.value = '';
+
     }
 
-    cardDiv.appendChild(p4);
-
-    divNew.appendChild(fansDiv);
-    divNew.appendChild(cardDiv);
-
-    container.appendChild(hr);
-    container.appendChild(divNew);
-
-    appeals.appendChild(container);
-
-    container.className = 'container';
-    divNew.className = 'row';
-    fansDiv.className = 'card col-2';
-    cardDiv.className = 'card col-8';
-    hr.className = 'row'
-
-    alert('All works :)');
 }

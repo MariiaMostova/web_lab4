@@ -1,10 +1,21 @@
-// function photo_from_pc() {
-//     let img = document.getElementById()
-// }
+const realFile = document.getElementById("real_file");
+const customBtn = document.getElementById("custom_button");
+const customImg = document.getElementById("add_img");
+
+customBtn.addEventListener('click', function () {
+    realFile.click();
+});
+
+realFile.addEventListener('change', function () {
+    if (realFile) {
+        customImg.src = URL.createObjectURL(this.files[0]);
+    }
+});
+
 
 function verifyInput() {
-    var titleField = document.getElementById('news_title');
-    var bodyField = document.getElementById('news_body');
+    let titleField = document.getElementById('news_title');
+    let bodyField = document.getElementById('news_body');
 
     if (titleField.value.trim() === ''){
        return false;
@@ -18,14 +29,14 @@ function verifyInput() {
 }
 
 function new_news() {
-    if (verifyInput()){
-        alert('News is sent :)');
-    }
-    // if (!photo_from_pc()){
-    //     alert('Image is not added :)');
-    // }
-    else {
+    if (!verifyInput()){
         alert('Edit please :)');
     }
+    if (customImg.src === '../images/picture.png'){
+        alert('Image is not added :)');
+    }
+    else {
+        alert('News is sent :)');
+    }
 
-};
+}
