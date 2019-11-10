@@ -1,6 +1,8 @@
-const realFile = document.getElementById("real_file");
-const customBtn = document.getElementById("custom_button");
-const customImg = document.getElementById("add_img");
+realFile = document.getElementById("real_file");
+customBtn = document.getElementById("custom_button");
+customImg = document.getElementById("add_img");
+titleField = document.getElementById('news_title');
+bodyField = document.getElementById('news_body');
 
 customBtn.addEventListener('click', function () {
     realFile.click();
@@ -12,24 +14,15 @@ realFile.addEventListener('change', function () {
     }
 });
 
-
-function verifyInput() {
-    let titleField = document.getElementById('news_title');
-    let bodyField = document.getElementById('news_body');
-
+function verifyInput(titleField, bodyField) {
     if (titleField.value.trim() === ''){
-       return false;
-    }
-    else if (bodyField.value.trim() === '') {
         return false;
     }
-     else{
-         return true;
-    }
+    else return bodyField.value.trim() !== '';
 }
 
 function new_news() {
-    if (!verifyInput()){
+    if (!verifyInput(titleField,bodyField)){
         alert('Edit please :)');
     }
     if (customImg.src === '../images/picture.png'){
@@ -37,6 +30,23 @@ function new_news() {
     }
     else {
         alert('News is sent :)');
+        addToLocalStorage();
     }
 
+}
+
+function addToLocalStorage() {
+    localStorage.setItem('news_title', titleField.value);
+    localStorage.setItem('news_body', bodyField.value);
+    localStorage.setItem('add_img', getBase64Image(customImg));
+}
+
+function getBase64Image(img) {
+    let canvas = document.createElement("canvas");
+    canvas.width = img.width;
+    canvas.height = img.height;
+    let context = canvas.getContext("2d");
+    context.drawImage(img, 0, 0);
+    let dataURL = canvas.toDataURL("image/png");
+    return dataURL
 }

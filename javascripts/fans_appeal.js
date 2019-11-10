@@ -1,25 +1,20 @@
-let main = document.getElementById('main');
+main = document.getElementById('main');
+body = document.getElementById('body');
+appeals = document.getElementById('appeals');
+container = document.createElement('div');
+description = document.getElementById('description');
+localStorage = window.localStorage;
 
 function verifyInput(descriptionField) {
-
-    if (descriptionField.value.trim() === ''){
-        return false;
-    }
-    else{
-        return true;
-    }
+    return descriptionField.value.trim() !== '';
 }
 
 function addNewAppeal() {
 
-    let body = document.getElementById('body');
-    let appeals = document.getElementById('appeals');
     let divNew = document.createElement("div");
     let fansDiv = document.createElement("div");
     let cardDiv = document.createElement("div");
-    let description = document.getElementById('description');
     let hr = document.createElement('hr');
-    let container = document.createElement('div');
 
     fansDiv.setAttribute("class",'fan_time class col-2');
 
@@ -56,16 +51,48 @@ function addNewAppeal() {
         container.appendChild(hr);
         container.appendChild(divNew);
 
-        appeals.appendChild(container);
-
         container.className = 'container';
         divNew.className = 'row';
         fansDiv.className = 'card col-2';
         cardDiv.className = 'card col-8';
-        hr.className = 'row'
+        hr.className = 'row';
 
+        localStorage.setItem('p1', p1.innerText);
+        localStorage.setItem('p2', p2.innerText);
+        localStorage.setItem('p3', p3.innerText);
+        localStorage.setItem('description', description.value);
         description.value = '';
 
     }
 
+}
+
+function getFromLocalStorage() {
+    container.innerHTML = `        
+        <div class="container">
+            <hr class="row">
+            <div class="row">
+                <div class="fan_time card col-2">
+                    <p class="card-text">${localStorage.getItem('p1')}</p>
+                    <p class="card-text">${localStorage.getItem('p2')}</p>
+                    <p class="card-text">${localStorage.getItem('p3')}</p>
+                </div>
+                <div class="card col-8">
+                    <p class="card-text">${localStorage.getItem('description')}</p>
+                </div>
+            </div>
+        </div>
+    </div>`;
+    appeals.appendChild(container);
+}
+
+
+function isOnline() {
+    return window.navigator.onLine;
+}
+
+if (description.value != null){
+    if (isOnline()){
+        getFromLocalStorage();
+    }
 }
