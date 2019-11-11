@@ -36,9 +36,11 @@ function new_news() {
 }
 
 function addToLocalStorage() {
-    localStorage.setItem('news_title', titleField.value);
-    localStorage.setItem('news_body', bodyField.value);
-    localStorage.setItem('add_img', getBase64Image(customImg));
+    let len = localStorage.length;
+    let i = len/3;
+    localStorage.setItem('news_title'  + i, titleField.value);
+    localStorage.setItem('news_body'  + i, bodyField.value);
+    localStorage.setItem('add_img'  + i, getBase64Image(customImg));
 }
 
 function getBase64Image(img) {
