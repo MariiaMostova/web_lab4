@@ -1,25 +1,19 @@
-let main = document.getElementById('main');
+body = document.getElementById('body');
+appeals = document.getElementById('appeals');
+description = document.getElementById('description');
+localStorage = window.localStorage;
 
 function verifyInput(descriptionField) {
-
-    if (descriptionField.value.trim() === ''){
-        return false;
-    }
-    else{
-        return true;
-    }
+    return descriptionField.value.trim() !== '';
 }
 
 function addNewAppeal() {
 
-    let body = document.getElementById('body');
-    let appeals = document.getElementById('appeals');
     let divNew = document.createElement("div");
     let fansDiv = document.createElement("div");
     let cardDiv = document.createElement("div");
-    let description = document.getElementById('description');
-    let hr = document.createElement('hr');
     let container = document.createElement('div');
+    let hr = document.createElement('hr');
 
     fansDiv.setAttribute("class",'fan_time class col-2');
 
@@ -43,6 +37,7 @@ function addNewAppeal() {
     fansDiv.appendChild(p3);
 
     let p4 = document.createElement('p');
+
     if (!verifyInput(description)) {
         alert('Print appeal please.');
         stop();
@@ -56,16 +51,59 @@ function addNewAppeal() {
         container.appendChild(hr);
         container.appendChild(divNew);
 
-        appeals.appendChild(container);
-
         container.className = 'container';
         divNew.className = 'row';
         fansDiv.className = 'card col-2';
         cardDiv.className = 'card col-8';
-        hr.className = 'row'
+        hr.className = 'row';
 
+        if (isOnline()){
+            appeals.appendChild(container);
+        }
+        addToLocalStorage(p1, p2, p3, description);
         description.value = '';
-
     }
 
+}
+
+function addToLocalStorage(p1, p2, p3, description) {
+    let len = localStorage.length;
+    let i = len / 4;
+    localStorage.setItem('user' + i, p1.innerText);
+    localStorage.setItem('date' + i, p2.innerText);
+    localStorage.setItem('time' + i, p3.innerText);
+    localStorage.setItem('description' + i, description.value);
+}
+
+function getFromLocalStorage(i) {
+    let container = document.createElement('div');
+    container.innerHTML = `        
+        <div class="container">
+            <hr class="row">
+            <div class="row">
+                <div class="fan_time card col-2">
+                    <p class="card-text">${localStorage.getItem('user' + i)}</p>
+                    <p class="card-text">${localStorage.getItem('date' + i)}</p>
+                    <p class="card-text">${localStorage.getItem('time' + i)}</p>
+                </div>
+                <div class="card col-8">
+                    <p class="card-text">${localStorage.getItem('description' + i)}</p>
+                </div>
+            </div>
+        </div>
+    </div>`;
+    appeals.appendChild(container);
+}
+
+
+function isOnline() {
+    return window.navigator.onLine;
+}
+
+len = localStorage.length;
+for (let i = 0; i < (len/4 - 1); i++) {
+    getFromLocalStorage(i);
+}
+if (isOnline() && len > 0){
+    getFromLocalStorage(len/4 - 1);
 }

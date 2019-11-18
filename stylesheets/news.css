@@ -43,7 +43,7 @@ div.card:hover {
         transform: scale(1.08);}
 }
 
-img{
+#image, img{
     width: 100%;
     height: auto;
     margin: 0;
