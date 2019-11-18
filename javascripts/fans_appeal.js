@@ -101,7 +101,7 @@ function isOnline() {
 }
 
 len = localStorage.length;
-for (let i=0; i<(len/4 - 1); i++) {
+for (let i = 0; i < (len/4 - 1); i++) {
     getFromLocalStorage(i);
 }
 if (isOnline() && len > 0){
