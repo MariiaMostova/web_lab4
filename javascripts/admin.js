@@ -1,8 +1,9 @@
-realFile = document.getElementById("real_file");
-customBtn = document.getElementById("custom_button");
+let realFile = document.getElementById("real_file");
+let customBtn = document.getElementById("custom_button");
 customImg = document.getElementById("add_img");
 titleField = document.getElementById('news_title');
 bodyField = document.getElementById('news_body');
+useLocalStorage = false;
 
 customBtn.addEventListener('click', function () {
     realFile.click();
@@ -22,7 +23,7 @@ function verifyInput(titleField, bodyField) {
 }
 
 function new_news() {
-    if (!verifyInput(titleField,bodyField)){
+    if (!verifyInput(titleField, bodyField)){
         alert('Edit please :)');
     }
     if (customImg.src === '../images/picture.png'){
@@ -30,7 +31,16 @@ function new_news() {
     }
     else {
         alert('News is sent :)');
-        addToLocalStorage();
+        if (useLocalStorage){
+            addToLocalStorage();
+        } else {
+            let indexedNews = {
+                image : getBase64Image(customImg),
+                title : titleField.value,
+                body : bodyField.value,
+            };
+            openIndexedDB( "news", indexedNews);
+        }
     }
 
 }
