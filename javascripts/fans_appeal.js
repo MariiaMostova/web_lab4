@@ -66,13 +66,16 @@ function addNewAppeal() {
         localStorage.setItem('description' + i, description.value);
     }
     else {
-        let indexedAppeal = {
-            user : p3.innerText,
+        let item = {
+            user : p1.innerText,
             date : p2.innerText,
-            time : p1.innerText,
+            time : p3.innerText,
             body : description.value
         };
-        openIndexedDB("appeals", indexedAppeal);
+        let xhr = new XMLHttpRequest();
+        xhr.open('POST', 'http://localhost:8000/appeals');
+        xhr.setRequestHeader('Content-Type','application/json');
+        xhr.send(JSON.stringify(item));
     }
 
     if (isOnline()){
@@ -132,3 +135,30 @@ if (isOnline() && len > 0){
         getFromLocalStorage(len/4 - 1);
     }
 }
+
+let xhr = new XMLHttpRequest();
+xhr.open('GET', 'http://localhost:8000/appeals');
+xhr.setRequestHeader('Content-Type','application/json');
+xhr.send();
+xhr.onload = () => {
+    let elements = JSON.parse(xhr.response);
+    for (let elem of elements)
+    {
+        let container = document.createElement('div');
+        container.innerHTML = `        
+        <div class="container">
+            <hr class="row">
+            <div class="row">
+                <div class="fan_time card col-2">
+                    <p class="card-text">${elem.user}</p>
+                    <p class="card-text">${elem.date}</p>
+                    <p class="card-text">${elem.time}</p>
+                </div>
+                <div class="card col-8">
+                    <p class="card-text">${elem.body}</p>
+                </div>
+            </div>
+        </div>
+    </div>`;
+        appeals.appendChild(container); }
+};

@@ -34,12 +34,17 @@ function new_news() {
         if (useLocalStorage){
             addToLocalStorage();
         } else {
-            let indexedNews = {
+            let item = {
                 image : getBase64Image(customImg),
                 title : titleField.value,
                 body : bodyField.value,
             };
-            openIndexedDB( "news", indexedNews);
+            let xhr = new XMLHttpRequest();
+            console.log('hhuu');
+            xhr.open('POST', 'http://localhost:8000/news');
+            xhr.setRequestHeader('Content-Type','application/json');
+            xhr.send(JSON.stringify(item));
+            // openIndexedDB( "news", indexedNews);
         }
     }
 

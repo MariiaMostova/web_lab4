@@ -49,7 +49,6 @@ function openIndexedDB(formName, item) {
     openRequest.onsuccess = function (event) {
         console.log("Success!");
         db = event.target.result;
-        console.log(db);
         let tx = db.transaction(formName, "readwrite");
         let objectStore = tx.objectStore(formName);
         if ( item == null && db != null && window.navigator.onLine){
